@@ -25,8 +25,8 @@
 
 <div>
   <p>常用的资料查询网址：
-   1.文件格式信息查询：https://www.runoob.com/http/http-content-type.html
-   2.Qt 5种标准对话框及使用方法详解： http://c.biancheng.net/view/1870.html
+   <p>1.文件格式信息查询：https://www.runoob.com/http/http-content-type.html
+   <p>2.Qt 5种标准对话框及使用方法详解： http://c.biancheng.net/view/1870.html
 </div>
 
 <div>
