@@ -27,6 +27,7 @@
   <p>常用的资料查询网址：
    <p>1.文件格式信息查询：https://www.runoob.com/http/http-content-type.html
    <p>2.Qt 5种标准对话框及使用方法详解： http://c.biancheng.net/view/1870.html
+   <p>3.GB2312、GBK和UTF-8三种编码以及QT中文显示乱码问题:  https://www.cnblogs.com/hust-yingjie/p/5481966.html
 </div>
 
 <div>
