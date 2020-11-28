@@ -28,6 +28,8 @@ void MainWindow::on_action_2_triggered()
 void MainWindow::on_pushButton_clicked()
 {
     ui->statusbar->showMessage(tr("你单击了：")+ui->pushButton->text());
+    this->hide();
+    outWin.show();
 }
 
 void MainWindow::on_pushButton_2_clicked()
@@ -46,8 +48,7 @@ void MainWindow::on_pushButton_3_clicked()
 
 void MainWindow::on_mainButton_clicked()
 {
-    this->hide();
-    outWin.show();
+
     //subWin.show();
 }
 

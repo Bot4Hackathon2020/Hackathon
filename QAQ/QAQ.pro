@@ -13,20 +13,26 @@ SOURCES += \
     mainwindow.cpp \
     nextanalysewin.cpp \
     outwin.cpp \
+    qtloinwin.cpp \
     subwidget.cpp
 
 HEADERS += \
     mainwindow.h \
     nextanalysewin.h \
     outwin.h \
+    qtloinwin.h \
     subwidget.h
 
 FORMS += \
     mainwindow.ui \
     nextanalysewin.ui \
-    outwin.ui
+    outwin.ui \
+    qtloinwin.ui
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin
 else: unix:!android: target.path = /opt/$${TARGET}/bin
 !isEmpty(target.path): INSTALLS += target
+
+RESOURCES += \
+    picture.qrc

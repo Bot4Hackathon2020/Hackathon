@@ -13,13 +13,42 @@
   <property name="windowTitle">
    <string>MainWindow</string>
   </property>
+  <property name="styleSheet">
+   <string notr="true">QMainWindow{
+	background-color: rgb(255, 254, 240);
+	border-image: url(:/new/prefix1/back.jpg);
+}
+
+QLineEdit{
+
+	border:3px solid#7b7b7b;
+	border-radius:5px;
+	background-color:#fffef0
+}
+
+QPushButton{
+	border:2px solid#7b7b7b;
+	border-radius:15px;
+	background-color:#6a92ff;
+	
+	font: 10 15pt &quot;字魂17号-萌趣果冻体&quot;;
+}
+
+QPushButton:hover{
+	background-color:#aa92ff
+}
+QPushButton:pressed{
+	background-color:#FF90ff
+}
+</string>
+  </property>
   <widget class="QWidget" name="centralwidget">
    <widget class="QPushButton" name="pushButton">
     <property name="geometry">
      <rect>
-      <x>650</x>
+      <x>580</x>
       <y>490</y>
-      <width>121</width>
+      <width>201</width>
       <height>51</height>
      </rect>
     </property>
@@ -36,6 +65,9 @@
       <height>31</height>
      </rect>
     </property>
+    <property name="styleSheet">
+     <string notr="true">font: 13pt &quot;方正舒体&quot;;</string>
+    </property>
     <property name="text">
      <string>1.分析结果1：</string>
     </property>
@@ -48,6 +80,9 @@
       <width>121</width>
       <height>31</height>
      </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 13pt &quot;方正舒体&quot;;</string>
     </property>
     <property name="text">
      <string>2.分析结果2：</string>
@@ -62,6 +97,9 @@
       <height>31</height>
      </rect>
     </property>
+    <property name="styleSheet">
+     <string notr="true">font: 13pt &quot;方正舒体&quot;;</string>
+    </property>
     <property name="text">
      <string>3.分析结果3：(图片展示)</string>
     </property>
@@ -69,9 +107,9 @@
    <widget class="QPushButton" name="pushButton_2">
     <property name="geometry">
      <rect>
-      <x>500</x>
-      <y>490</y>
-      <width>121</width>
+      <x>580</x>
+      <y>430</y>
+      <width>201</width>
       <height>51</height>
      </rect>
     </property>
@@ -82,9 +120,9 @@
    <widget class="QPushButton" name="pushButton_3">
     <property name="geometry">
      <rect>
-      <x>310</x>
-      <y>490</y>
-      <width>171</width>
+      <x>580</x>
+      <y>370</y>
+      <width>201</width>
       <height>51</height>
      </rect>
     </property>
@@ -97,8 +135,8 @@
      <rect>
       <x>20</x>
       <y>270</y>
-      <width>411</width>
-      <height>191</height>
+      <width>541</width>
+      <height>231</height>
      </rect>
     </property>
    </widget>

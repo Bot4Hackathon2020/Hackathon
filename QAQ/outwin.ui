@@ -13,6 +13,35 @@
   <property name="windowTitle">
    <string>MainWindow</string>
   </property>
+  <property name="styleSheet">
+   <string notr="true">QMainWindow{
+	background-color: rgb(255, 254, 240);
+	border-image: url(:/new/prefix1/back.jpg);
+}
+
+QLineEdit{
+
+	border:3px solid#7b7b7b;
+	border-radius:5px;
+	background-color:#fffef0
+}
+
+QPushButton{
+	border:2px solid#7b7b7b;
+	border-radius:15px;
+	background-color:#6a92ff;
+	
+	font: 10 15pt &quot;字魂17号-萌趣果冻体&quot;;
+}
+
+QPushButton:hover{
+	background-color:#aa92ff
+}
+QPushButton:pressed{
+	background-color:#FF90ff
+}
+</string>
+  </property>
   <widget class="QWidget" name="centralwidget">
    <widget class="QPushButton" name="pushButton">
     <property name="geometry">
@@ -30,7 +59,7 @@
    <widget class="QPushButton" name="pushButton_2">
     <property name="geometry">
      <rect>
-      <x>370</x>
+      <x>380</x>
       <y>490</y>
       <width>121</width>
       <height>41</height>
@@ -43,7 +72,7 @@
    <widget class="QPushButton" name="pushButton_3">
     <property name="geometry">
      <rect>
-      <x>520</x>
+      <x>530</x>
       <y>490</y>
       <width>121</width>
       <height>41</height>
@@ -57,13 +86,16 @@
     <property name="geometry">
      <rect>
       <x>10</x>
-      <y>80</y>
+      <y>64</y>
       <width>578</width>
-      <height>15</height>
+      <height>21</height>
      </rect>
     </property>
+    <property name="styleSheet">
+     <string notr="true">font: 14pt &quot;字魂7号-温暖童稚体&quot;;</string>
+    </property>
     <property name="text">
-     <string>1.心态词典匹配结果：</string>
+     <string>1、心态词典匹配结果：</string>
     </property>
    </widget>
    <widget class="QTextBrowser" name="textBrowser">
@@ -80,13 +112,16 @@
     <property name="geometry">
      <rect>
       <x>10</x>
-      <y>160</y>
+      <y>154</y>
       <width>578</width>
-      <height>15</height>
+      <height>21</height>
      </rect>
     </property>
+    <property name="styleSheet">
+     <string notr="true">font: 14pt &quot;字魂7号-温暖童稚体&quot;;</string>
+    </property>
     <property name="text">
-     <string>2.情绪饼图：</string>
+     <string>2、情绪饼图：</string>
     </property>
    </widget>
    <widget class="QGraphicsView" name="graphicsView">
