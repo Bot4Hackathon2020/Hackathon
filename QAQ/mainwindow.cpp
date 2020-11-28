@@ -47,7 +47,8 @@ void MainWindow::on_pushButton_3_clicked()
 void MainWindow::on_mainButton_clicked()
 {
     this->hide();
-    subWin.show();
+    outWin.show();
+    //subWin.show();
 }
 
 void MainWindow::tomainSlot()

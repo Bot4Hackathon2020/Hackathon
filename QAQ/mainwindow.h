@@ -6,6 +6,7 @@
 #include <QString>
 #include <QFileDialog>
 #include "subwidget.h"
+#include "outwin.h"
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
@@ -21,6 +22,7 @@ public:
 
 public:
     SubWidget subWin;
+    outWin outWin;
 
 private slots:
     void on_action_triggered();

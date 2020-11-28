@@ -11,14 +11,20 @@ CONFIG += c++11
 SOURCES += \
     main.cpp \
     mainwindow.cpp \
+    nextanalysewin.cpp \
+    outwin.cpp \
     subwidget.cpp
 
 HEADERS += \
     mainwindow.h \
+    nextanalysewin.h \
+    outwin.h \
     subwidget.h
 
 FORMS += \
-    mainwindow.ui
+    mainwindow.ui \
+    nextanalysewin.ui \
+    outwin.ui
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin
