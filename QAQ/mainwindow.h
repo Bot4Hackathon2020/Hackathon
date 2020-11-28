@@ -5,6 +5,7 @@
 #include <QMessageBox>
 #include <QString>
 #include <QFileDialog>
+#include "subwidget.h"
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
@@ -18,6 +19,9 @@ public:
     MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
 
+public:
+    SubWidget subWin;
+
 private slots:
     void on_action_triggered();
 
@@ -28,6 +32,10 @@ private slots:
     void on_pushButton_3_clicked();
 
     void on_action_2_triggered();
+
+    void on_mainButton_clicked();
+
+    void tomainSlot();
 
 private:
     Ui::MainWindow *ui;

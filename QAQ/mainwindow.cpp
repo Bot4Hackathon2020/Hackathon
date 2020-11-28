@@ -6,6 +6,7 @@ MainWindow::MainWindow(QWidget *parent)
     , ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
+    QObject::connect(&subWin,SIGNAL(mySignal()),this,SLOT(tomainSlot()));
 }
 
 MainWindow::~MainWindow()
@@ -41,4 +42,16 @@ void MainWindow::on_pushButton_3_clicked()
     QFile myFile(fileName);
     if(!myFile.open(QIODevice::ReadOnly | QIODevice::Text))
         return;
+}
+
+void MainWindow::on_mainButton_clicked()
+{
+    this->hide();
+    subWin.show();
+}
+
+void MainWindow::tomainSlot()
+{
+    this->show();
+    subWin.hide();
 }
