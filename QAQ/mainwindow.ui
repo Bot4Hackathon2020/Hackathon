@@ -15,17 +15,10 @@
   </property>
   <widget class="QWidget" name="centralwidget">
    <layout class="QGridLayout" name="gridLayout">
-    <item row="6" column="0">
-     <widget class="QRadioButton" name="radioButton_4">
+    <item row="7" column="0">
+     <widget class="QLabel" name="label_3">
       <property name="text">
-       <string>评论</string>
-      </property>
-     </widget>
-    </item>
-    <item row="10" column="1">
-     <widget class="QPushButton" name="pushButton">
-      <property name="text">
-       <string>确定</string>
+       <string>3.请输入需要分析的文章</string>
       </property>
      </widget>
     </item>
@@ -36,21 +29,14 @@
       </property>
      </widget>
     </item>
-    <item row="5" column="0">
-     <widget class="QRadioButton" name="radioButton_3">
-      <property name="text">
-       <string>谣言类</string>
-      </property>
-     </widget>
-    </item>
-    <item row="3" column="0">
+    <item row="2" column="0">
      <widget class="QRadioButton" name="radioButton_2">
       <property name="text">
        <string>自媒体新闻</string>
       </property>
      </widget>
     </item>
-    <item row="10" column="2">
+    <item row="11" column="1">
      <widget class="QPushButton" name="pushButton_2">
       <property name="text">
        <string>取消</string>
@@ -58,6 +44,50 @@
      </widget>
     </item>
     <item row="8" column="0">
+     <widget class="QPushButton" name="pushButton_3">
+      <property name="text">
+       <string>选择文件</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="0">
+     <widget class="QRadioButton" name="radioButton">
+      <property name="minimumSize">
+       <size>
+        <width>91</width>
+        <height>0</height>
+       </size>
+      </property>
+      <property name="text">
+       <string>央媒新闻</string>
+      </property>
+     </widget>
+    </item>
+    <item row="4" column="0">
+     <widget class="QRadioButton" name="radioButton_4">
+      <property name="text">
+       <string>评论</string>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="0">
+     <widget class="QRadioButton" name="radioButton_3">
+      <property name="text">
+       <string>谣言类</string>
+      </property>
+     </widget>
+    </item>
+    <item row="9" column="0">
+     <widget class="QTextEdit" name="textEdit"/>
+    </item>
+    <item row="5" column="0">
+     <widget class="QLabel" name="label_2">
+      <property name="text">
+       <string>2.请选择分析关键词</string>
+      </property>
+     </widget>
+    </item>
+    <item row="6" column="0">
      <widget class="QComboBox" name="comboBox">
       <item>
        <property name="text">
@@ -246,29 +276,10 @@
       </item>
      </widget>
     </item>
-    <item row="1" column="0">
-     <widget class="QRadioButton" name="radioButton">
-      <property name="minimumSize">
-       <size>
-        <width>91</width>
-        <height>0</height>
-       </size>
-      </property>
+    <item row="10" column="1">
+     <widget class="QPushButton" name="pushButton">
       <property name="text">
-       <string>央媒新闻</string>
-      </property>
-     </widget>
-    </item>
-    <item row="9" column="0">
-     <widget class="QTextEdit" name="textEdit"/>
-    </item>
-    <item row="9" column="1" colspan="2">
-     <widget class="QListWidget" name="listWidget"/>
-    </item>
-    <item row="7" column="0">
-     <widget class="QLabel" name="label_2">
-      <property name="text">
-       <string>2.请选择分析关键词</string>
+       <string>确定</string>
       </property>
      </widget>
     </item>
@@ -287,10 +298,28 @@
     <property name="title">
      <string>文件</string>
     </property>
+    <addaction name="action"/>
+   </widget>
+   <widget class="QMenu" name="menu_2">
+    <property name="title">
+     <string>关于</string>
+    </property>
+    <addaction name="action_2"/>
    </widget>
    <addaction name="menu"/>
+   <addaction name="menu_2"/>
   </widget>
   <widget class="QStatusBar" name="statusbar"/>
+  <action name="action">
+   <property name="text">
+    <string>打开</string>
+   </property>
+  </action>
+  <action name="action_2">
+   <property name="text">
+    <string>关于我们</string>
+   </property>
+  </action>
  </widget>
  <resources/>
  <connections/>
