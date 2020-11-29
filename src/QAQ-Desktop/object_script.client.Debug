@@ -1,0 +1,10 @@
+debug/main.o
+debug/mainwindow.o
+debug/nextanalysewin.o
+debug/outwin.o
+debug/qtloinwin.o
+debug/qrc_picture.o
+debug/moc_mainwindow.o
+debug/moc_nextanalysewin.o
+debug/moc_outwin.o
+debug/moc_qtloinwin.o

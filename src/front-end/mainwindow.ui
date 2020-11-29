@@ -1,0 +1,410 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>QAQ</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QMainWindow{
+	background-color: rgb(255, 254, 240);
+	border-image: url(:/picture/back.jpg);
+}
+
+QLineEdit{
+
+	border:3px solid#7b7b7b;
+	border-radius:5px;
+	background-color:#fffef0
+}
+
+QPushButton{
+	border:2px solid#7b7b7b;
+	border-radius:15px;
+	background-color:#6a92ff;
+	
+	font: 10 15pt &quot;字魂17号-萌趣果冻体&quot;;
+}
+
+QPushButton:hover{
+	background-color:#aa92ff
+}
+QPushButton:pressed{
+	background-color:#FF90ff
+}
+</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="6" column="0">
+     <widget class="QComboBox" name="comboBox">
+      <property name="styleSheet">
+       <string notr="true">font: 9pt &quot;黑体&quot;;
+</string>
+      </property>
+      <item>
+       <property name="text">
+        <string>请选择</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>高兴
+</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>愤怒
+</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>恐惧
+</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>悲哀
+</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>着急
+</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>喜爱
+</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>怨恨
+</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>烦闷
+</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>忧愁
+</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>抑郁
+</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>自豪
+</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>委屈
+</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>羞愧
+</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>懊悔
+</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>惊奇
+</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>警觉
+</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>疑惑
+</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>同情
+</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>满意
+</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>敬佩
+</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>感激
+</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>思念
+</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>轻蔑
+</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>期望
+</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>失望
+</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>孤独
+</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>平静
+</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>高昂
+</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>低落
+</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>无奈
+</string>
+       </property>
+      </item>
+     </widget>
+    </item>
+    <item row="8" column="0">
+     <widget class="QPushButton" name="pushButton_3">
+      <property name="text">
+       <string>选择文件</string>
+      </property>
+     </widget>
+    </item>
+    <item row="9" column="0">
+     <widget class="QTextEdit" name="textEdit"/>
+    </item>
+    <item row="0" column="0">
+     <widget class="QLabel" name="label">
+      <property name="styleSheet">
+       <string notr="true">font: 13pt &quot;方正舒体&quot;;</string>
+      </property>
+      <property name="text">
+       <string>1.请选择分析需求</string>
+      </property>
+     </widget>
+    </item>
+    <item row="7" column="0">
+     <widget class="QLabel" name="label_3">
+      <property name="styleSheet">
+       <string notr="true">font: 13pt &quot;方正舒体&quot;;</string>
+      </property>
+      <property name="text">
+       <string>3.请输入需要分析的文章</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="0">
+     <widget class="QRadioButton" name="radioButton">
+      <property name="minimumSize">
+       <size>
+        <width>91</width>
+        <height>0</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 10pt &quot;微软雅黑&quot;;</string>
+      </property>
+      <property name="text">
+       <string>央媒新闻</string>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="0">
+     <widget class="QRadioButton" name="radioButton_3">
+      <property name="styleSheet">
+       <string notr="true">font: 10pt &quot;微软雅黑&quot;;</string>
+      </property>
+      <property name="text">
+       <string>谣言类</string>
+      </property>
+     </widget>
+    </item>
+    <item row="5" column="0">
+     <widget class="QLabel" name="label_2">
+      <property name="styleSheet">
+       <string notr="true">font: 13pt &quot;方正舒体&quot;;</string>
+      </property>
+      <property name="text">
+       <string>2.请选择分析关键词</string>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="0">
+     <widget class="QRadioButton" name="radioButton_2">
+      <property name="styleSheet">
+       <string notr="true">font: 10pt &quot;微软雅黑&quot;;</string>
+      </property>
+      <property name="text">
+       <string>自媒体新闻</string>
+      </property>
+     </widget>
+    </item>
+    <item row="4" column="0">
+     <widget class="QRadioButton" name="radioButton_4">
+      <property name="styleSheet">
+       <string notr="true">font: 10pt &quot;微软雅黑&quot;;</string>
+      </property>
+      <property name="text">
+       <string>评论</string>
+      </property>
+     </widget>
+    </item>
+    <item row="11" column="0" colspan="3">
+     <widget class="QPushButton" name="pushButton">
+      <property name="styleSheet">
+       <string notr="true">QMainWindow{
+	background-color: rgb(255, 254, 240);
+	border-image: url(:/new/prefix1/back.jpg);
+}
+
+QLineEdit{
+
+	border:2px solid#7b7b7b;
+	border-radius:15px;
+	background-color:#fffef0
+}
+
+QPushButton{
+	border:2px solid#7b7b7b;
+	border-radius:15px;
+	background-color:#6a92ff;
+	
+	
+	font: 15 16pt &quot;字魂17号-萌趣果冻体&quot;;
+}
+
+QPushButton:hover{
+	background-color:#aa92ff
+}
+QPushButton:pressed{
+	background-color:#FF90ff
+}
+</string>
+      </property>
+      <property name="text">
+       <string>确定</string>
+      </property>
+     </widget>
+    </item>
+    <item row="12" column="0" colspan="3">
+     <widget class="QPushButton" name="pushButton_2">
+      <property name="text">
+       <string>取消</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu">
+    <property name="title">
+     <string>文件</string>
+    </property>
+    <addaction name="action"/>
+   </widget>
+   <widget class="QMenu" name="menu_2">
+    <property name="title">
+     <string>关于</string>
+    </property>
+    <addaction name="action_2"/>
+   </widget>
+   <addaction name="menu"/>
+   <addaction name="menu_2"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="action">
+   <property name="text">
+    <string>打开</string>
+   </property>
+  </action>
+  <action name="action_2">
+   <property name="text">
+    <string>关于我们</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
